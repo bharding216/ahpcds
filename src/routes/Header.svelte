@@ -3,7 +3,7 @@
 	import logo from '$lib/images/ahpcds-logo.png';
 </script>
 
-<header>
+<header class="my-3">
 	<nav class="navbar sticky-top navbar-expand-lg navbar-custom static-top">
 		<div class="container">
 
@@ -22,16 +22,16 @@
 			<!--Links to the right-->
 			<div class="navbar-collapse collapse mb-3" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto me-5">
-					<li aria-current={$page.url.pathname === '/portfolio' ? 'page' : undefined} class="nav-item">
-						<a href="/portfolio" class="nav-link">Portfolio</a>
+					<li aria-current={$page.url.pathname === '/our-school' ? 'page' : undefined} class="nav-item">
+						<a href="/our-school" class="nav-link">Our School</a>
 					</li>
 
-					<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined} class="nav-item">
-						<a href="/about" class="nav-link">About</a>
+					<li aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined} class="nav-item">
+						<a href="/schedule-tour" class="nav-link">Schedule Tour</a>
 					</li>
 
-					<li aria-current={$page.url.pathname === '/pricing' ? 'page' : undefined} class="nav-item">
-						<a href="/pricing" class="nav-link">Pricing</a>
+					<li aria-current={$page.url.pathname === '/forms' ? 'page' : undefined} class="nav-item">
+						<a href="/forms" class="nav-link">Forms</a>
 					</li>
 
 					<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined} class="nav-item">
@@ -62,14 +62,14 @@
 		}
 
         .logo {
-			width: 200px;
+			width: 150px;
 			height: auto;
 		}
 	}
 
 	@media (min-width: 768px) {
 		.logo {
-			width: 300px;
+			width: 200px;
 			height: auto;
 		}
 	}

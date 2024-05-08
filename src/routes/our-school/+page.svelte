@@ -1,0 +1,1 @@
+<p>this page will contain class info and general school info</p>
