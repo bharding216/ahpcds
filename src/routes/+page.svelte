@@ -1,5 +1,6 @@
 <script>
     import schoolPhoto from '$lib/images/ahpcds-school.jpg';
+    import { page } from '$app/stores';
 </script>
 
 <svelte:head>
@@ -23,7 +24,7 @@
                 </div>
             </div>
             <div class="text-center pt-5">
-                <button class="btn btn-primary" style="height: 50px;">Schedule a tour today</button>
+                <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour today</a>
             </div>
         </div>
     </div>

@@ -20,7 +20,7 @@
               <p class="fw-bold">Quick Links</p>
               <p class="mb-2"><a href="/our-school" class="unstyled-link">Our School</a></p>
               <p class="mb-2"><a href="/schedule-tour" class="unstyled-link">Schedule Tour</a></p>              
-              <p class="mb-2"><a href="/forms" class="unstyled-link">Forms</a></p>
+              <p class="mb-2"><a href="/forms" class="unstyled-link">Forms & Info</a></p>
               <p><a href="/contact" class="unstyled-link">Contact</a></p>
             </div>
             <div class="col-12 col-sm-6">

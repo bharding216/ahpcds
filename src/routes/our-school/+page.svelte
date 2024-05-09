@@ -8,6 +8,7 @@
     import child6 from '$lib/images/child6.jpg';
     import child7 from '$lib/images/child7.jpg';
     import child8 from '$lib/images/child8.jpg';
+	import { page } from '$app/stores';
 
 </script>
 
@@ -94,7 +95,7 @@
         <div class="row">
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="pb-4">Come see our school!</h1>
-                <button class="btn btn-primary">Book a tour</button>
+                <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Book a tour</a>
             </div>
 
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
