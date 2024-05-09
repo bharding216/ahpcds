@@ -1,6 +1,10 @@
 <script>
     const cal23_24Link = 'https://ahpcds.s3.amazonaws.com/23-24-calendar.webp';
     const cal24_25Link = 'https://ahpcds.s3.amazonaws.com/24-25-calendar.pdf';
+    const summerCamp24 = 'https://ahpcds.s3.amazonaws.com/2024-Summer-Camp-Registration.pdf';
+    const admissionForm = 'https://ahpcds.s3.amazonaws.com/Admission-Information-Form.pdf';
+    const registrationForm24_25 = 'https://ahpcds.s3.amazonaws.com/Registration-Form-2024-to-2025.pdf';
+    const handbook = 'https://ahpcds.s3.amazonaws.com/Parent-Handbook.pdf';
 </script>
 
 <svelte:head>
@@ -12,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1>Forms</h1>
+                <h1>Forms & Info</h1>
             </div>
         </div>
     </div>
@@ -91,38 +95,57 @@
 </section>
 
 
-<section class="pb-5">
+<section class="py-5">
     <div class="container">
-        <div class="row">
+        <div class="row pb-4">
             <div class="col">
                 <h1>Enrollment Forms</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6">
-                <p>links over here</p>
+            <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
+                <a href={registrationForm24_25} target="_blank" rel="noopener noreferrer" class="btn btn-primary mb-3">Enrollment Form 2024-2025</a>
+                <a href={admissionForm} target="_blank" rel="noopener noreferrer" class="btn btn-primary">Admission Form 2024-2025</a>
             </div>
-            <div class="col-12 col-sm-6">
-                <p>links over here</p>
+            <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
+                <a href={summerCamp24} target="_blank" rel="noopener noreferrer" class="btn btn-primary mb-3">Summer Camp 2024</a>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="pb-5">
+<section class="py-5">
     <div class="container">
-        <div class="row">
+        <div class="row pb-4">
             <div class="col">
                 <h1>Tuition & Handbook</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-12 col-sm-6">
-                <p>handbook link</p>
+            <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
+                <a href={handbook} target="_blank" rel="noopener noreferrer" class="btn btn-primary mb-3">Parent Handbook</a>
             </div>
             <div class="col-12 col-sm-6">
-                <p>some text</p>
+                <p>
+                    The Day School offers both full- and part-time enrollment.
+                    The tuition listed below is due at the beginning of every month. If you have questions or need further information regarding the cost of childcare at Alamo Heights Presbyterian Church, please <a href="/contact">contact us</a>.
+                </p>
+                <p>
+                    School Age (After School Program) Full Day of Care - $75 Additional fee per day when AHISD is closed. AHPCDS After School Care program follows AHISD calendar.
+                </p>
+                <p>
+                    After the 5th day of each month, your account will be charged a $5/day late fee.
+                </p>
+                <p>
+                    Pick up is no later than 5:30 pm or a $5/minute is charged to your account.
+                </p>
+                <p>
+                    All fees are DUE at registration and NON-REFUNDABLE! Thank you!
+                </p>
+                <p>
+                    For Any Question Please Call +1(210) 822-3213
+                </p>
             </div>
         </div>
     </div>

@@ -31,7 +31,7 @@
 					</li>
 
 					<li aria-current={$page.url.pathname === '/forms' ? 'page' : undefined} class="nav-item">
-						<a href="/forms" class="nav-link">Forms</a>
+						<a href="/forms" class="nav-link">Forms & Info</a>
 					</li>
 
 					<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined} class="nav-item">
