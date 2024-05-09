@@ -26,12 +26,15 @@
                 <button class="btn btn-primary" style="height: 50px;">Schedule a tour today</button>
             </div>
         </div>
-
     </div>
 </section>
 
 <div class="container">
-
+    <section>
+        <div class="text-center">
+            <p>an image owl-carousel here</p>
+        </div>
+    </section>
 
 </div>
 
