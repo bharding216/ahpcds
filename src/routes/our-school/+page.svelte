@@ -11,6 +11,11 @@
 
 </script>
 
+<svelte:head>
+	<title>AHPCDS - Our School</title>
+    <meta name="description" content="AHPCDS - Our School" />
+</svelte:head>
+
 <section class="py-5">
     <div class="container text-center">
         <h1>Our Holistic Approach to Child Development</h1>
