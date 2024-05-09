@@ -27,17 +27,13 @@
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex align-items-center justify-content-center">
                 <img src={fun1} alt="fun1" class="img-fluid rounded-img" />
             </div>
-            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
-                <p class="px-1 px-sm-5">
-                    Our committed and experienced staff bring fun, creative, and challenging activities into every classroom.
-                    AHPCDS serves children aged six weeks to five years old. We are open from 7:30 a.m. – 5:30 p.m. 
-                    Monday through Friday, and we offer pick-up and an after-school program for children from Howard 
-                    Early Childhood Center, Cambridge and Woodridge Elementary Schools. We also offer a summer camp 
-                    program for elementary school children.
-                </p>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <p>Our committed and experienced staff bring fun, creative, and challenging activities into every classroom. AHPCDS serves children aged six weeks to five years old.</p>
+                <p>We are open from 7:30 a.m. – 5:30 p.m. Monday through Friday, and we offer pick-up and an after-school program for children from Howard Early Childhood Center, Cambridge and Woodridge Elementary Schools.</p>
+                <p>We also offer a summer camp program for elementary school children.</p>
             </div>
         </div>
 
@@ -53,34 +49,34 @@
 
         </div>
         <div class="row pb-5">
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <h2>Infants</h2>
                 <img src={child7} alt="child7" class="img-fluid rounded-img" />
             </div>
 
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <h2>Ones</h2>
                 <img src={child2} alt="child2" class="img-fluid rounded-img" />
             </div>
 
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <h2>Twos</h2>
                 <img src={child3} alt="child3" class="img-fluid rounded-img" />
             </div>
         </div>
 
         <div class="row pb-5">
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <h2>Pre-K-3</h2>
                 <img src={child4} alt="child4" class="img-fluid rounded-img" />
             </div>
 
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <h2>Pre-K-4</h2>
                 <img src={child5} alt="child5" class="img-fluid rounded-img" />
             </div>
 
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <h2>School Age</h2>
                 <img src={child6} alt="child6" class="img-fluid rounded-img">
             </div>
@@ -93,7 +89,7 @@
 <section class="py-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="pb-4 text-center">Step into a World of Wonder at AHPCDS</h1>
                 <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Book a tour</a>
             </div>
@@ -109,7 +105,7 @@
 
 <style>
     h2 {
-        font-size: 2.0rem;
+        font-size: 1.5rem;
         padding-bottom: 30px;
         text-align: center;
     }
@@ -117,5 +113,6 @@
     .rounded-img {
         border-radius: 30px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        height: 300px;
     }
 </style>
