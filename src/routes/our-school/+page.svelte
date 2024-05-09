@@ -94,7 +94,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-                <h1 class="pb-4">Come see our school!</h1>
+                <h1 class="pb-4 text-center">Step into a World of Wonder at AHPCDS</h1>
                 <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Book a tour</a>
             </div>
 

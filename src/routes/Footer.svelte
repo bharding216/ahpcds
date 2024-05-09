@@ -4,16 +4,10 @@
 
 	var currentYear = new Date().getFullYear();
 
-
 </script>
 
 <footer>
     <div class="py-5 mb-4 text-center container">
-        <div class="row pt-5 py-3 mb-4 mb-sm-3">
-            <div class="col-12">
-
-            </div>
-        </div>
 
         <div class="row d-flex align-items-center">
             <div class="col-12 col-sm-6">
