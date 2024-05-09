@@ -43,19 +43,19 @@
 <section>
     <div class="container">
         <div class="text-center py-5">
-            <h1 class="mb-5">Tailored Programs for All Ages</h1>
+            <h1 class="mb-5 px-3">Tailored Programs for All Ages</h1>
             <a href="/our-school" class="btn btn-primary">Check out our classes</a>
         </div>
         <div class="row pb-5">
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <img src={child7} alt="child7" class="img-fluid rounded-img" />
             </div>
     
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <img src={child2} alt="child2" class="img-fluid rounded-img" />
             </div>
     
-            <div class="col-12 col-md-4 text-center">
+            <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">
                 <img src={child3} alt="child3" class="img-fluid rounded-img" />
             </div>
         </div>
@@ -68,5 +68,6 @@
     .rounded-img {
         border-radius: 30px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+        height: 300px
     }
 </style>

@@ -15,7 +15,7 @@
     <div class="container">
         <div class="row pb-5">
             <div class="col text-center">
-                <h1>Schedule a Tour</h1>
+                <h1>We're ready to show you around!</h1>
             </div>
         </div>
 

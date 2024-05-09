@@ -10,11 +10,11 @@
     <div class="py-5 mb-4 text-center container">
 
         <div class="row d-flex align-items-center">
-            <div class="col-12 col-sm-6">
+            <div class="col-12 col-sm-6 mb-5 mb-sm-0">
               <p class="fw-bold">Quick Links</p>
-              <p class="mb-2"><a href="/our-school" class="unstyled-link">Our School</a></p>
-              <p class="mb-2"><a href="/schedule-tour" class="unstyled-link">Schedule Tour</a></p>              
-              <p class="mb-2"><a href="/forms" class="unstyled-link">Forms & Info</a></p>
+              <p class="mb-3"><a href="/our-school" class="unstyled-link">Our School</a></p>
+              <p class="mb-3"><a href="/schedule-tour" class="unstyled-link">Schedule Tour</a></p>              
+              <p class="mb-3"><a href="/forms" class="unstyled-link">Forms & Info</a></p>
               <p><a href="/contact" class="unstyled-link">Contact</a></p>
             </div>
             <div class="col-12 col-sm-6">
