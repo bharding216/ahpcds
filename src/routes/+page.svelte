@@ -40,11 +40,11 @@
     </div>
 </section>
 
-<section>
+<section class="pb-5">
     <div class="container">
         <div class="text-center py-5">
             <h1 class="mb-5 px-3">Tailored Programs for All Ages</h1>
-            <a href="/our-school" class="btn btn-primary">Check out our classes</a>
+            <a href="/our-school" class="btn btn-primary mb-5">Check out our classes</a>
         </div>
         <div class="row pb-5">
             <div class="col-12 col-md-4 mb-5 mb-sm-0 text-center">

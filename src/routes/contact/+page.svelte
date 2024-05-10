@@ -152,7 +152,7 @@
 		border: 1px solid black;
 		box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
         padding: 40px;
-        background-color: rgb(249, 248, 255);
+        background-color: var(--light-yellow);
 	}
 
     @media (max-width: 768px) {

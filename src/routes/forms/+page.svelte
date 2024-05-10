@@ -12,23 +12,20 @@
     <meta name="description" content="AHPCDS Forms" />
 </svelte:head>
 
-<section class="py-5">
+<section class="teal-section-with-padding">
     <div class="container">
         <div class="row">
-            <div class="col text-center">
-                <h1>Forms & Info</h1>
+            <div class="col text-center pb-5">
+                <h1>Forms & School Info</h1>
             </div>
         </div>
-    </div>
-</section>
 
-<section class="pb-5">
-    <div class="container">
         <div class="row pb-4">
             <div class="col">
-                <h1>Calendar & Schedule</h1>
+                <h2>Calendar & Schedule</h2>
             </div>
         </div>
+
         <div class="row">
             <div class="col-12 col-sm-6 mb-5 mb-sm-0">
                 <p>We provide child care Monday through Friday every week except for the days which we are closed as indicated here.</p>
@@ -89,11 +86,11 @@
 </section>
 
 
-<section class="py-5">
+<section class="yellow-section">
     <div class="container">
         <div class="row pb-4">
             <div class="col">
-                <h1>Enrollment Forms</h1>
+                <h2>Enrollment Forms</h2>
             </div>
         </div>
         <div class="row">
@@ -109,11 +106,11 @@
 </section>
 
 
-<section class="py-5">
+<section class="teal-section-with-padding">
     <div class="container">
         <div class="row pb-4">
             <div class="col">
-                <h1>Tuition & Handbook</h1>
+                <h2>Tuition & Handbook</h2>
             </div>
         </div>
         <div class="row">
@@ -122,16 +119,14 @@
             </div>
             <div class="col-12 col-sm-6">
                 <p>
-                    The Day School offers both full- and part-time enrollment.
-                    The tuition listed below is due at the beginning of every month. If you have questions or need further information regarding the cost of childcare at Alamo Heights Presbyterian Church, please <a href="/contact">contact us</a>.
+                    We offer both full- and part-time enrollment.
+                    The tuition is due at the beginning of every month. 
+                    If you have questions or need further information regarding the cost of childcare, please <a href="/contact">contact us</a>.
                 </p>
-                <p>
-                    School Age (After School Program) Full Day of Care - $75 Additional fee per day when AHISD is closed. AHPCDS After School Care program follows AHISD calendar.
-                </p>
-                <p>After the 5th day of each month, your account will be charged a $5/day late fee.</p>
+                <p>Our School Age (After School Program) is an additional $75 per day when AHISD is closed (we follow the AHISD calendar).</p>
                 <p>Pick up is no later than 5:30 pm or a $5/minute is charged to your account.</p>
-                <p>All fees are due at registration and are non-refundable.</p>
-                <p>For Any Question Please Call +1(210) 822-3213</p>
+                <p>All registration fees are due when you register and are non-refundable.</p>
+                <p>Give us a call if you have any questions! +1(210) 822-3213</p>
             </div>
         </div>
     </div>

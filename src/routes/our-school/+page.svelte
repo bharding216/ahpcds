@@ -17,14 +17,11 @@
     <meta name="description" content="AHPCDS - Our School" />
 </svelte:head>
 
-<section class="py-5">
-    <div class="container text-center">
+<section class="teal-section-with-padding">
+    <div class="container text-center pb-5 mb-4">
         <h1>Our Holistic Approach to Child Development</h1>
     </div>
-</section>
 
-
-<section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex align-items-center justify-content-center">
@@ -40,7 +37,7 @@
     </div>
 </section>
 
-<section class="py-5">
+<section class="yellow-section">
     <div class="container">
         <div class="row pb-5">
             <div class="col text-center">
@@ -86,7 +83,7 @@
 </section>
 
 
-<section class="py-5">
+<section class="teal-section-with-padding">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex flex-column justify-content-center align-items-center">
@@ -98,7 +95,6 @@
                 <img src={child1} alt="child1" class="img-fluid rounded-img" />
             </div>
         </div>
-
     </div>
 </section>
 
@@ -115,4 +111,5 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
         height: 300px;
     }
+
 </style>

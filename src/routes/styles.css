@@ -1,12 +1,41 @@
 :root {
-    --dark-green: #006c84;
-    --medium-green: #6eb5c0;
-    --light-green: #e4faff;
+    --dark-purple: #6f2dbd;
+    --medium-purple: #a663cc;
+    --light-purple: #e5d7fc;
+    --light-yellow: #fffeea;
+    --light-orange: #fff0e4;
+    --teal: #f2fffe;
     --white: #ffffff;
+    --off-white: #f8f8f8;
     --black: #000000;
-    --accent-color: #ffccbb;
   }
 
-  .unstyled-link {
-    text-decoration: underline;
-    color: var(--black);}
+.unstyled-link {
+  text-decoration: underline;
+  color: var(--black);
+}
+
+.btn-primary {
+  background-color: var(--dark-purple);
+  color: var(--white);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--medium-purple);
+}
+
+.teal-section-with-padding {
+  background-color: var(--teal);
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.yellow-section {
+  background-color: var(--light-yellow);
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
