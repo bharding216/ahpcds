@@ -16,16 +16,15 @@
 }
 
 .btn-primary {
-  background-color: var(--dark-purple);
-  color: var(--white);
-  border: none;
-  padding: 15px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: var(--dark-purple) !important;
+  border: none !important;
+  padding: 15px 20px !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
 }
 
 .btn-primary:hover {
-  background-color: var(--medium-purple);
+  background-color: var(--medium-purple) !important;
 }
 
 .teal-section-with-padding {
