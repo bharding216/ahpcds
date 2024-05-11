@@ -1,10 +1,15 @@
 :root {
-    --dark-purple: #6f2dbd;
+    /* --dark-purple: #893052; maroon */
+    /* --dark-purple: #be93d4; periwinkle */
+    --dark-purple: #af69ef;
+    /* --dark-purple: #6f2dbd; original */
+    /* --medium-purple: #c9227e; */
     --medium-purple: #a663cc;
     --light-purple: #e5d7fc;
-    --light-yellow: #fffeea;
+    --light-yellow: #fffff4;
     --light-orange: #fff0e4;
-    --teal: #f2fffe;
+    /* --teal: #f2fffe; */
+    --teal: #fffff4;
     --white: #ffffff;
     --off-white: #f8f8f8;
     --black: #000000;
