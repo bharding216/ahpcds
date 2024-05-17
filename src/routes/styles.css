@@ -15,9 +15,28 @@
     --black: #000000;
   }
 
+@font-face {
+    font-family: 'PatrickHand';
+    src: url('/fonts/PatrickHand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PatrickHand', sans-serif;
+}
+
+p {
+  font-family: sans-serif;
+}
+
 .unstyled-link {
   text-decoration: underline;
   color: var(--black);
+}
+
+.btn {
+  font-size: 16px;
 }
 
 .btn-primary {

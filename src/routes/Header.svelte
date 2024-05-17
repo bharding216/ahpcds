@@ -49,7 +49,7 @@
 	}
 
 	.nav-link {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	.navbar-custom {
