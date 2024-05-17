@@ -12,7 +12,7 @@
     <meta name="description" content="AHPCDS Forms" />
 </svelte:head>
 
-<section class="teal-section-with-padding">
+<section class="light-yellow-section-with-padding">
     <div class="container">
         <div class="row">
             <div class="col text-center pb-5">
@@ -26,11 +26,26 @@
             </div>
         </div>
 
+        <div class="row pb-4">
+            <div class="col-12 mb-5 mb-sm-0">
+                <p>
+                    We provide child care Monday through Friday every week except for 
+                    the days which we are closed as indicated here.
+                </p>
+
+                <p>
+                    A daily routine gives young children the stability and confidence 
+                    they crave. We strive to provide a stable framework that adds 
+                    structure to our daily lives but also leaves plenty of room for 
+                    spontaneous and additional activities.
+                </p>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-12 col-sm-6 mb-5 mb-sm-0">
-                <p>We provide child care Monday through Friday every week except for the days which we are closed as indicated here.</p>
-                <p>A daily routine gives young children the stability and confidence they crave. We strive to provide a stable framework that adds structure to our daily lives but also leaves plenty of room for spontaneous and additional activities.</p>
                 <p><strong>Our Daily Schedule</strong></p>
+
                 <table style="width: 100%;" class="table table-striped table-bordered">
                     <tbody>
                         <tr>
@@ -81,12 +96,13 @@
                 <a href={cal23_24Link} target="_blank" rel="noopener noreferrer" class="btn btn-primary mb-3">Calendar 2023-2024</a>
                 <a href={cal24_25Link} target="_blank" rel="noopener noreferrer" class="btn btn-primary">Calendar 2024-2025</a>
             </div>
+
         </div>
     </div>
 </section>
 
 
-<section class="yellow-section">
+<section class="light-yellow-section-with-padding">
     <div class="container">
         <div class="row pb-4">
             <div class="col">
@@ -106,17 +122,19 @@
 </section>
 
 
-<section class="teal-section-with-padding">
+<section class="light-yellow-section-with-padding">
     <div class="container">
         <div class="row pb-4">
             <div class="col">
                 <h2>Tuition & Handbook</h2>
             </div>
         </div>
+        
         <div class="row">
-            <div class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center">
+            <div class="col-12 col-sm-6 mb-4 mb-sm-0 d-flex flex-column align-items-center justify-content-center">
                 <a href={handbook} target="_blank" rel="noopener noreferrer" class="btn btn-primary mb-3">Parent Handbook</a>
             </div>
+
             <div class="col-12 col-sm-6">
                 <p>
                     We offer both full- and part-time enrollment.
@@ -136,6 +154,10 @@
 
     h1 {
         text-align: center;
+    }
+
+    .table {
+        background-color: white !important;
     }
 
 </style>

@@ -17,7 +17,7 @@
     <meta name="description" content="AHPCDS - Our School" />
 </svelte:head>
 
-<section class="teal-section-with-padding">
+<section class="light-yellow-section-with-padding">
     <div class="container text-center pb-5 mb-4">
         <h1>Our Holistic Approach to Child Development</h1>
     </div>
@@ -37,7 +37,7 @@
     </div>
 </section>
 
-<section class="yellow-section">
+<section class="light-yellow-section-with-padding">
     <div class="container">
         <div class="row pb-5">
             <div class="col text-center">
@@ -83,7 +83,7 @@
 </section>
 
 
-<section class="teal-section-with-padding">
+<section class="light-yellow-section-with-padding">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex flex-column justify-content-center align-items-center">

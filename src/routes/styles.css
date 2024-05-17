@@ -8,8 +8,6 @@
     --light-purple: #e5d7fc;
     --light-yellow: #fffff4;
     --light-orange: #fff0e4;
-    /* --teal: #f2fffe; */
-    --teal: #fffff4;
     --white: #ffffff;
     --off-white: #f8f8f8;
     --black: #000000;
@@ -51,13 +49,13 @@ p {
   background-color: var(--medium-purple) !important;
 }
 
-.teal-section-with-padding {
-  background-color: var(--teal);
+.light-yellow-section-with-padding {
+  background-color: var(--light-yellow);
   padding-top: 65px;
   padding-bottom: 65px;
 }
 
-.yellow-section {
+.light-yellow-section-with-padding {
   background-color: var(--light-yellow);
   padding-top: 65px;
   padding-bottom: 65px;
