@@ -63,6 +63,39 @@
 </section>
 
 
+<section>
+    <div class="py-5 container">
+        <div class="pt-5">
+            <div class="row mb-5 text-center">
+                <h1>Testimonials from our Community </h1>
+            </div>
+        </div>
+    
+        <div class="pb-5">
+            <div class="row mb-3 px-5 px-sm-0">
+                <div class="col-sm-12 col-md-4 justify-content-center gameplan-col mb-4">
+                    <div class="text-center gameplan-content">
+                        <p class="m-0">"They've created a warm and nurturing environment where our little one is thriving both socially and academically".</p>
+                    </div>
+                </div>
+    
+                <div class="col-sm-12 col-md-4 justify-content-center gameplan-col mb-4">
+                    <div class="text-center gameplan-content">
+                        <p class="m-0">"From the moment we toured the facility, we knew it was the perfect place for our child".</p>
+
+                    </div>
+                </div>
+    
+                <div class="col-sm-12 col-md-4 justify-content-center gameplan-col mb-4">
+                    <div class="text-center gameplan-content">
+                        <p class="m-0">"They provide regular updates and photos throughout the day, which helps us feel connected and reassured".</p>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <style>
     .rounded-img {
@@ -76,4 +109,19 @@
             background-attachment: scroll !important;
         }
     }
+
+    .gameplan-content {
+		padding: 60px 20px;
+		background-color: var(--medium-purple); 
+		border-radius: 20px; 
+		height: 100%;
+		border: 1px solid black;
+		box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: white;
+        font-size: 1.2rem;
+	}
+
 </style>
