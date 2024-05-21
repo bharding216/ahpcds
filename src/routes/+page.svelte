@@ -67,7 +67,7 @@
     <div class="py-5 container">
         <div class="pt-5">
             <div class="row mb-5 text-center">
-                <h1>Testimonials from our Community </h1>
+                <h1>Testimonials from our Community</h1>
             </div>
         </div>
     
