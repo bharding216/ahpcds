@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col iframe-column">
                 <iframe 
-                    src="https://www.toddly.app/school-profile/Alamo-Heights-Presbyterian-Church-Day-School?open_schedule_tour_modal=true" 
+                    src="https://www.toddly.app/school-profile/Alamo-Heights-Presbyterian-Church-Day-School-San-Antonio-TX-5299?open_schedule_tour_modal=true" 
                     title="Schedule a tour" 
                     width="100%" 
                     height="100%"
