@@ -39,7 +39,7 @@ p {
 }
 
 .btn-primary {
-  color: black;
+  color: black !important; 
   background-color: var(--medium-purple) !important;
   border: none !important;
   padding: 15px 20px !important;
