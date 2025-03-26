@@ -1,16 +1,17 @@
 :root {
     /* --dark-purple: #893052; maroon */
     /* --dark-purple: #be93d4; periwinkle */
-    --dark-purple: #af69ef;
+    --dark-purple: #d1a0ff;
     /* --dark-purple: #6f2dbd; original */
     /* --medium-purple: #c9227e; */
-    --medium-purple: #a663cc;
-    --light-purple: #e5d7fc;
+    --medium-purple: #e6baff;
+    --light-purple: #f2ebff;
     --light-yellow: #fffff4;
     --light-orange: #fff0e4;
     --white: #ffffff;
     --off-white: #f8f8f8;
     --black: #000000;
+    --grey: #808080;
   }
 
 @font-face {
@@ -38,7 +39,8 @@ p {
 }
 
 .btn-primary {
-  background-color: var(--dark-purple) !important;
+  color: black;
+  background-color: var(--medium-purple) !important;
   border: none !important;
   padding: 15px 20px !important;
   border-radius: 5px !important;
@@ -46,7 +48,8 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: var(--medium-purple) !important;
+  color: black;
+  background-color: var(--light-purple) !important;
 }
 
 .light-yellow-section-with-padding {
