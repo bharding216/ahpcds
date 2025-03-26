@@ -60,7 +60,7 @@
     <div class="container pb-5">
         <div class="row mb-3 px-5 px-sm-0">
             <div class="col-sm-12 col-md-4 justify-content-center homepage-cols mb-4">
-                <a href="/our-classes" class="interactive-card">
+                <a href="/our-school" class="interactive-card">
                     <div class="text-center homepage-card">
                         <h4 class="mb-4 mt-3">About Us</h4>
                         <i class="fa-solid fa-school" style="color: black; font-size: 60px;"></i>
@@ -73,7 +73,7 @@
             </div>
 
             <div class="col-sm-12 col-md-4 justify-content-center homepage-cols mb-4">
-                <a href="/our-classes" class="interactive-card">
+                <a href="/our-school" class="interactive-card">
                     <div class="text-center homepage-card">
                         <h4 class="mb-4 mt-3">Our Classes</h4>
                         <i class="fa-solid fa-children" style="color: black; font-size: 60px;"></i>
