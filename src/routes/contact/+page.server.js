@@ -1,14 +1,14 @@
 import nodemailer from 'nodemailer';
 import { 
-    recaptcha_secret_key, 
-    development_smtp_host,
-    development_smtp_pass,
-    development_smtp_port,
-    development_smtp_user,
-    production_smtp_host,
-    production_smtp_port,
-    production_smtp_user,
-    production_smtp_pass
+    RECAPTCHA_SECRET_KEY, 
+    DEVELOPMENT_SMTP_HOST,
+    DEVELOPMENT_SMTP_PASS,
+    DEVELOPMENT_SMTP_PORT,
+    DEVELOPMENT_SMTP_USER,
+    PRODUCTION_SMTP_HOST,
+    PRODUCTION_SMTP_PORT,
+    PRODUCTION_SMTP_USER,
+    PRODUCTION_SMTP_PASS
 } from '$env/static/private'
 import { dev } from '$app/environment';
 
@@ -22,7 +22,7 @@ export const actions = {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: `secret=${recaptcha_secret_key}&response=${data.get('g-recaptcha-response')}`
+            body: `secret=${RECAPTCHA_SECRET_KEY}&response=${data.get('g-recaptcha-response')}`
         });
 
         const recaptcha = await response.json();
@@ -39,18 +39,18 @@ export const actions = {
 
         // Dynamically configure transport based on environment
         const transportConfig = dev ? {
-            host: development_smtp_host,
-            port: development_smtp_port,
+            host: DEVELOPMENT_SMTP_HOST,
+            port: DEVELOPMENT_SMTP_PORT,
             auth: {
-                user: development_smtp_user,
-                pass: development_smtp_pass
+                user: DEVELOPMENT_SMTP_USER,
+                pass: DEVELOPMENT_SMTP_PASS
             }
         } : {
-            host: production_smtp_host,
-            port: production_smtp_port,
+            host: PRODUCTION_SMTP_HOST,
+            port: PRODUCTION_SMTP_PORT,
             auth: {
-                user: production_smtp_user,
-                pass: production_smtp_pass
+                user: PRODUCTION_SMTP_USER,
+                pass: PRODUCTION_SMTP_PASS
             },
             // Optional: Add secure connection for production
             secure: true
