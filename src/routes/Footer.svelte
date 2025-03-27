@@ -6,7 +6,7 @@
 
 </script>
 
-<footer>
+<footer class="bg-light">
     <div class="py-5 pb-5 text-center container">
 
         <div class="row d-flex align-items-center">
@@ -29,10 +29,6 @@
 </footer>
 
 <style>
-
-    footer {
-        background-color: var(--light-yellow);
-    }
 
     .social-link {
         color: #000;

@@ -2,6 +2,9 @@
     // import schoolPhoto from '$lib/images/ahpcds-school.jpg';
     import schoolPhoto from '$lib/images/kids-playing.jpg';
     import teacherPhoto from '$lib/images/teachers.jpg';
+    import soccerPhoto from '$lib/images/soccer.jpg';
+    import gymPhoto from '$lib/images/gym.png';
+    import engPhoto from '$lib/images/eng.png';
     import { page } from '$app/stores';
 
     import child1 from '$lib/images/child1.jpg';
@@ -159,7 +162,65 @@
     </div>
 </section>
 
-
+<section class="extracurriculars py-5 bg-light">
+    <div class="container my-5">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold mb-4">Enriching Extracurricular Experiences</h2>
+            <p class="lead text-muted mb-4">Discover the exciting learning opportunities beyond the classroom</p>
+            <a href="/our-school" class="btn btn-primary btn-lg px-4 py-2">Explore All Activities</a>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src={soccerPhoto} alt="Soccer Shots" class="card-img-top rounded-top" />
+                    <div class="card-body text-center">
+                        <h3 class="card-title h4 mb-3">Soccer Shots</h3>
+                        <p class="card-text text-muted">
+                            Develop athletic skills, teamwork, and confidence through engaging soccer programs designed specifically for young learners.
+                        </p>
+                        <div class="mt-3">
+                            <span class="badge bg-success me-2">Physical Development</span>
+                            <span class="badge bg-primary">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src={gymPhoto} alt="Gymnastics" class="card-img-top rounded-top" />
+                    <div class="card-body text-center">
+                        <h3 class="card-title h4 mb-3">Gymnastics</h3>
+                        <p class="card-text text-muted">
+                            Build strength, flexibility, and body awareness through fun and structured gymnastics classes tailored for children.
+                        </p>
+                        <div class="mt-3">
+                            <span class="badge bg-warning me-2">Coordination</span>
+                            <span class="badge bg-info">Flexibility</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src={engPhoto} alt="Bricks Bots & Breaks" class="card-img-top rounded-top" />
+                    <div class="card-body text-center">
+                        <h3 class="card-title h4 mb-3">Bricks Bots & Beakers</h3>
+                        <p class="card-text text-muted">
+                            Explore the world of STEM through hands-on robotics, building challenges, and creative problem-solving activities.
+                        </p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-2">STEM</span>
+                            <span class="badge bg-secondary">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <style>
     .rounded-img {

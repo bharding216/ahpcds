@@ -8,6 +8,7 @@
     import child6 from '$lib/images/child6.jpg';
     import child7 from '$lib/images/child7.jpg';
     import child8 from '$lib/images/child8.jpg';
+    import infantPhoto from '$lib/images/infant.jpg';
 	import { page } from '$app/stores';
 
 </script>
@@ -17,7 +18,7 @@
     <meta name="description" content="AHPCDS - Our School" />
 </svelte:head>
 
-<section class="light-yellow-section-with-padding">
+<section class="bg-light py-5">
     <div class="container text-center pb-5 mb-4">
         <h1>Our Holistic Approach to Child Development</h1>
     </div>
@@ -27,9 +28,14 @@
             <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex align-items-center justify-content-center">
                 <img src={fun1} alt="fun1" class="img-fluid rounded-img" />
             </div>
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
-                <p>Our committed and experienced staff bring fun, creative, and challenging activities into every classroom. AHPCDS serves children aged six weeks to five years old.</p>
-                <p>We are open from 7:30 a.m. – 5:30 p.m. Monday through Friday, and we offer pick-up and an after-school program for children from Howard Early Childhood Center, Cambridge and Woodridge Elementary Schools.</p>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+                <p>In our work, we put great focus on one thing - the welfare and education of your child. In order to properly encourage your child's personal and academic development, 
+                    our professional educators follow a unique pedagogic approach that combines academic excellence with a free-spirited and playful atmosphere for learning.</p>
+                    
+                <p>Our teachers regularly participate in educational seminars and always bring new ideas and input to their daily tasks.</p>
+
+                <p>AHPCDS serves children aged six weeks to five years old.
+                We are open from 7:30 a.m. - 5:30 p.m. Monday through Friday, and we offer pick-up and an after-school program for children from Howard Early Childhood Center, Cambridge and Woodridge Elementary Schools.</p>
                 <p>We also offer a summer camp program for elementary school children.</p>
             </div>
         </div>
@@ -37,11 +43,11 @@
     </div>
 </section>
 
-<section class="light-yellow-section-with-padding">
+<section class="py-5">
     <div class="container">
         <div class="row pb-5">
             <div class="col text-center">
-                <h1>Our classes</h1>
+                <h1>Our Classes</h1>
             </div>
 
         </div>
@@ -82,13 +88,36 @@
     </div>
 </section>
 
+<section style="position: relative; background: url({infantPhoto}) no-repeat center center/cover; color: white;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: white; opacity: 0.5; z-index: 1;"></div>
+    <div class="container pb-5" style="position: relative; z-index: 2; padding-top: 75px;">
+        <div class="row mb-5 justify-content-center">   
+            <div class="col-12 col-md-8">
+                <div class="text-center">
+                    <h1 style="color:black; font-weight: bold; letter-spacing: 2px;" class="pb-4">Robinson House: A Nurturing Home for Infants</h1>
 
-<section class="light-yellow-section-with-padding">
+                    <h4 style="color:black; font-weight: 500; letter-spacing: 1px;">
+                        Nestled within our infant program, the Robinson House offers a warm, home-like environment designed specifically for our youngest learners.
+                    </h4>
+
+                    <h4 style="color:black; font-weight: 500; letter-spacing: 1px;">
+                        Named in honor of long-time church members Iris and Robby Robinson, this dedicated space provides exceptional care for up to 18 infants, ensuring each child receives personalized attention and support during their critical early developmental stages.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-5">
+            <a href="/robinson-house" class="btn btn-primary" aria-current={$page.url.pathname === '/robinson-house' ? 'page' : undefined}>Read more</a>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light py-5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="pb-4 text-center">Step into a World of Wonder at AHPCDS</h1>
-                <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Book a tour</a>
+                <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour</a>
             </div>
 
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
@@ -97,7 +126,6 @@
         </div>
     </div>
 </section>
-
 
 <style>
     h2 {

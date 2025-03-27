@@ -12,7 +12,7 @@
     <meta name="description" content="AHPCDS Forms" />
 </svelte:head>
 
-<section class="light-yellow-section-with-padding">
+<section class="bg-light py-5">
     <div class="container">
         <div class="row">
             <div class="col text-center pb-5">
@@ -102,7 +102,7 @@
 </section>
 
 
-<section class="light-yellow-section-with-padding">
+<section class="py-5">
     <div class="container">
         <div class="row pb-4">
             <div class="col">
@@ -122,7 +122,7 @@
 </section>
 
 
-<section class="light-yellow-section-with-padding">
+<section class="bg-light py-5">
     <div class="container">
         <div class="row pb-4">
             <div class="col">

@@ -64,7 +64,7 @@
 
 <div class="container form-container">
     <div class="row justify-content-center pb-5">
-        <div class="col-12 col-md-10 col-lg-6 form-border">
+        <div class="col-12 col-md-10 col-lg-6 form-border bg-light">
             <form 
                 bind:this={formElement}
                 method="POST" 
@@ -138,7 +138,10 @@
 
                 <div class="g-recaptcha mb-3" data-sitekey={recaptcha_site_key} style="transform:scale(0.8); transform-origin:0 0"></div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">
+                    Send
+                    <i class="fas fa-paper-plane ms-2"></i>
+                </button>
 
             </form>
         </div>
@@ -152,7 +155,6 @@
 		border: 1px solid black;
 		box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
         padding: 40px;
-        background-color: var(--light-yellow);
 	}
 
     @media (max-width: 768px) {
