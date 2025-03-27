@@ -24,7 +24,7 @@
 </svelte:head>
 
 <section class="pb-5">
-    <div class="pt-5 pb-5" style="min-height: 700px; position: relative;">
+    <div class="pt-0 pt-sm-5 pb-5" style="min-height: 700px; position: relative;">
         <div class="background-image" style="background: url({schoolPhoto}) no-repeat center center fixed; 
                     background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 0;"></div>
         <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;
@@ -39,7 +39,11 @@
                         </h4>
 
                         <h4 style="color:black; font-weight: 500; letter-spacing: 1px;">
-                            With a low child-to-staff ratio, our experienced educators create engaging, creative, and challenging experiences tailored to each child's unique needs. We proudly serve children from six weeks to four years old, offer after-school programs for local elementary students, and provide an exciting summer camp.
+                            With a low child-to-staff ratio, our experienced educators create engaging, creative, and challenging experiences tailored to each child's unique needs.
+                        </h4>
+
+                        <h4 style="color:black; font-weight: 500; letter-spacing: 1px;">
+                            We proudly serve children from six weeks to four years old, offer after-school programs for local elementary students, and provide an exciting summer camp.
                         </h4>
                     </div>
                 </div>
@@ -51,7 +55,7 @@
     </div>
 </section>
 
-<section class="py-5">
+<section class="py-1 py-sm-5">
     <div class="container pt-5" data-aos="fade-up" data-aos-duration="750">
         <div class="row mb-5 text-center">
             <h1 style="color: black;">
@@ -60,7 +64,7 @@
         </div>
     </div>
 
-    <div class="container pb-5">
+    <div class="container pb-1 pb-sm-5">
         <div class="row mb-3 px-5 px-sm-0">
             <div class="col-sm-12 col-md-4 justify-content-center homepage-cols mb-4">
                 <a href="/our-school" class="interactive-card">

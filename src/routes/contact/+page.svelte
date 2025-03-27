@@ -9,8 +9,11 @@
     let showFormSubmissionMessage = false;
     let formSubmissionMessage = "";
     let response_data = "";
+    let dobDisabled = false; 
 
     let recaptcha_site_key='6LdIHNcpAAAAAN1t9VWk_Wt_N_NmjaxDchGbe__u';
+
+    const today = new Date().toISOString().split('T')[0];
 
     onMount(async () => {
         const script = document.createElement('script');
@@ -25,6 +28,9 @@
         document.body.appendChild(script);
     });
 
+    function toggleDobDisabled() {
+        dobDisabled = !dobDisabled;
+    }
 </script>
 
 <svelte:head>
@@ -119,9 +125,29 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-floating mb-3">
-                            <input type="date" class="form-control" id="dob" name="dob"
-                                placeholder="Child's Date of Birth" required>
+                            <input 
+                                type="date" 
+                                class="form-control" 
+                                id="dob" 
+                                name="dob"
+                                placeholder="Child's Date of Birth" 
+                                required={!dobDisabled}
+                                disabled={dobDisabled}
+                                value={today}
+                                max={today}
+                            >
                             <label for="dob">Child's Date of Birth</label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input 
+                                type="checkbox" 
+                                class="form-check-input" 
+                                id="dob-unknown" 
+                                on:change={toggleDobDisabled}
+                            >
+                            <label class="form-check-label" for="dob-unknown">
+                                Child not born yet
+                            </label>
                         </div>
                     </div>
                 </div>
