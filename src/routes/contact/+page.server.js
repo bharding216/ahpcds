@@ -52,8 +52,6 @@ export const actions = {
                 user: PRODUCTION_SMTP_USER,
                 pass: PRODUCTION_SMTP_PASS
             },
-            // Optional: Add secure connection for production
-            secure: true
         };
 
         const transport = nodemailer.createTransport(transportConfig);
