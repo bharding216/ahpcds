@@ -6,15 +6,9 @@
     import gymPhoto from '$lib/images/gym.png';
     import engPhoto from '$lib/images/eng.png';
     import { page } from '$app/stores';
-
-    import child1 from '$lib/images/child1.jpg';
     import child2 from '$lib/images/child2.jpg';
     import child3 from '$lib/images/child3.jpg';
-    import child4 from '$lib/images/child4.jpg';
-    import child5 from '$lib/images/child5.jpg';
-    import child6 from '$lib/images/child6.jpg';
     import child7 from '$lib/images/child7.jpg';
-    import child8 from '$lib/images/child8.jpg';
 
 </script>
 

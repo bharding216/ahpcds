@@ -10,6 +10,7 @@
     let formSubmissionMessage = "";
     let response_data = "";
     let dobDisabled = false; 
+    let formStartTime;
 
     let recaptcha_site_key='6LdIHNcpAAAAAN1t9VWk_Wt_N_NmjaxDchGbe__u';
 
@@ -40,7 +41,8 @@
 
 {#if showOverlay}
     <div id="formOverlay">
-        <div class="overlay-content" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+        <div class="overlay-content" 
+            style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
             <div class="spinner-grow text-light" role="status" style="width: 2rem; height: 2rem;">
                 <span class="sr-only">Sending your message...</span>
             </div>
@@ -84,12 +86,14 @@
                         formSuccess = response_data.success !== false;
                         formSubmissionMessage = formSuccess ?
                             "Your message has been sent! We'll get back to you as soon as possible." :
-                            "Please mark the reCaptcha checkbox before submitting.";
+                            response_data.body.error || "Hmm we're having an issue. Please give us a call!";
                         if (formSuccess) formElement.reset();
                         window.scrollTo(0, 0);
                     }
                 }}
             >
+                <input type="hidden" name="formStartTime" value={formStartTime} />
+
                 <p class="text-muted">*All fields are required*</p>
 
                 <div class="row">
@@ -105,7 +109,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email" name="email" 
+                            <input type="email" class="form-control" 
+                                id="email" name="email" 
                                 placeholder="Email" required>
                             <label for="email">Email</label>
                         </div>
@@ -115,7 +120,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-floating mb-3">
-                            <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone" 
+                            <input type="tel" class="form-control" name="phone" 
+                                id="phone" placeholder="Phone" 
                                 maxlength="15" required/> 
                             <label for="phone">Phone</label>
                         </div>
@@ -156,7 +162,8 @@
                     <div class="col">
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" name="message"
-                                placeholder="What's on your mind?" style="height: 150px" required></textarea>
+                                placeholder="What's on your mind?" 
+                                style="height: 150px" required></textarea>
                             <label for="message">What's on your mind?</label>
                         </div>
                     </div>
@@ -168,7 +175,6 @@
                     Send
                     <i class="fas fa-paper-plane ms-2"></i>
                 </button>
-
             </form>
         </div>
     </div>
@@ -210,6 +216,5 @@
         font-weight: bold;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
-
 
 </style>

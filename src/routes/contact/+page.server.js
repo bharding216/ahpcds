@@ -11,10 +11,44 @@ import {
     PRODUCTION_SMTP_PASS
 } from '$env/static/private'
 import { dev } from '$app/environment';
+import { spamWords } from '../../constants/spamWords.js';
 
 export const actions = {
     default: async ({ request }) => {
         const data = await request.formData();
+
+        const submissionTime = new Date();
+        const formStartTime = parseInt(data.get('form-start-time') || '0');
+
+        // Check if form was submitted too quickly (less than 4 seconds)
+        if ((submissionTime - formStartTime) < 4000) {
+            return {
+                status: 400,
+                body: {
+                    error: 'Form submitted too quickly. Please try again.'
+                },
+                success: false
+            }
+        }
+
+        // Check for spam keywords in message and name fields
+        const message = data.get('message')?.toString().toLowerCase() || '';
+        const username = data.get('username')?.toString().toLowerCase() || '';
+        
+        const containsSpamKeyword = spamWords.some(keyword => 
+            message.includes(keyword.toLowerCase()) || 
+            username.includes(keyword.toLowerCase())
+        );
+        
+        if (containsSpamKeyword) {
+            return {
+                status: 400,
+                body: {
+                    error: 'Your message contains prohibited content. Please revise and try again.'
+                },
+                success: false
+            }
+        }
 
         // Verify reCAPTCHA
         const response = await fetch('https://www.google.com/recaptcha/api/siteverify', {
@@ -31,7 +65,7 @@ export const actions = {
             return {
                 status: 400,
                 body: {
-                    error: 'reCAPTCHA failed'
+                    error: 'reCAPTCHA failed. Please try again.',
                 },
                 success: false
             }
