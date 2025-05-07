@@ -35,18 +35,25 @@ export const actions = {
         const message = data.get('message')?.toString().toLowerCase() || '';
         const username = data.get('username')?.toString().toLowerCase() || '';
         
-        const containsSpamKeyword = spamWords.some(keyword => 
-            message.includes(keyword.toLowerCase()) || 
-            username.includes(keyword.toLowerCase())
-        );
-        
-        if (containsSpamKeyword) {
-            return {
-                status: 400,
-                body: {
-                    error: 'Your message contains prohibited content. Please revise and try again.'
-                },
-                success: false
+        // Only check for spam words if the message is long enough to be meaningful
+        if (message.length > 10) {
+            const containsSpamKeyword = spamWords.some(keyword => {
+                // Only check words that are at least 4 characters long
+                if (keyword.length < 4) return false;
+                
+                // Use word boundaries to avoid partial matches
+                const regex = new RegExp(`\\b${keyword}\\b`, 'i');
+                return regex.test(message) || regex.test(username);
+            });
+            
+            if (containsSpamKeyword) {
+                return {
+                    status: 400,
+                    body: {
+                        error: 'Your message contains prohibited content. Please revise and try again.'
+                    },
+                    success: false
+                }
             }
         }
 
