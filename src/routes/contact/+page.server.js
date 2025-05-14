@@ -112,7 +112,7 @@ export const actions = {
                     <p><strong>Name:</strong> ${escapeHtml(safeGet(data, 'username'))}</p>
                     <p><strong>Email:</strong> ${escapeHtml(safeGet(data, 'email'))}</p>
                     <p><strong>Phone:</strong> ${escapeHtml(safeGet(data, 'phone'))}</p>
-                    <p><strong>DOB:</strong> ${escapeHtml(safeGet(data, 'dob'))}</p>
+                    <p><strong>DOB:</strong> ${escapeHtml(formatDate(safeGet(data, 'dob')))}</p>
                     <p><strong>Message:</strong> ${escapeHtml(safeGet(data, 'message'))}</p>
                 `
             });
@@ -161,4 +161,15 @@ function safeGet(formData, key) {
     }
     
     return value;
+}
+
+function formatDate(dateString) {
+    if (!dateString || dateString === 'Not born yet') return dateString;
+    
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
 }
