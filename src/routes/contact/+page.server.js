@@ -106,6 +106,7 @@ export const actions = {
                 from: 'hello@ahpcdayschool.com',
                 to: recipientEmail,
                 cc: dev ? '' : 'brandon@toddly.app',
+                replyTo: safeGet(data, 'email'),
                 subject: `${dev ? '[DEV] ' : ''}New Contact Form Submission`,
                 html: `
                     <h1>Contact Form Submission</h1>
