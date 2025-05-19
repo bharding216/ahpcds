@@ -42,8 +42,17 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center pt-5">
-                <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour today</a>
+            <div class="row pt-5 justify-content-center">
+                <div class="col-12 col-md-4 text-center">
+                    <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour today</a>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a href="https://www.toddly.app/school-profile/Alamo-Heights-Presbyterian-Church-Day-School-San-Antonio-TX-5299?open_enrollment_modal=true" 
+                        target="_blank"
+                        class="btn btn-primary">
+                        Join our waitlist
+                    </a>
+                </div>
             </div>
         </div>
     </div>

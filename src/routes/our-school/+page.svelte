@@ -116,8 +116,21 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 mb-5 mb-sm-0 d-flex flex-column justify-content-center align-items-center">
-                <h1 class="pb-4 text-center">Step into a World of Wonder at AHPCDS</h1>
-                <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour</a>
+                <div class="row">
+                    <div class="col-12 mb-0 mb-md-4 text-center">
+                        <h1 class="pb-4 text-center">Step into a World of Wonder at AHPCDS</h1>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                        <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour</a>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
+                        <a href="https://www.toddly.app/school-profile/Alamo-Heights-Presbyterian-Church-Day-School-San-Antonio-TX-5299?open_enrollment_modal=true" 
+                            target="_blank"
+                            class="btn btn-primary">
+                            Join our waitlist
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
