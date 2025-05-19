@@ -35,25 +35,32 @@ export const actions = {
         const message = data.get('message')?.toString().toLowerCase() || '';
         const username = data.get('username')?.toString().toLowerCase() || '';
         
-        // Only check for spam words if the message is long enough to be meaningful
-        if (message.length > 10) {
-            const containsSpamKeyword = spamWords.some(keyword => {
-                // Only check words that are at least 4 characters long
-                if (keyword.length < 4) return false;
-                
-                // Use word boundaries to avoid partial matches
-                const regex = new RegExp(`\\b${keyword}\\b`, 'i');
-                return regex.test(message) || regex.test(username);
-            });
-            
-            if (containsSpamKeyword) {
-                return {
-                    status: 400,
-                    body: {
-                        error: 'Your message contains prohibited content. Please revise and try again.'
-                    },
-                    success: false
-                }
+        // Check for common spam patterns
+        const spamPatterns = [
+            /(?:whatsapp|telegram|signal|viber|messenger)/i,
+            /(?:rank|ranking|top\s*\d+)/i,
+            /(?:seo|optimization|optimize)/i,
+            /(?:affordable|cheap|low\s*cost)/i,
+            /(?:contact\s*us|reach\s*out|get\s*in\s*touch)/i
+        ];
+
+        // Check for spam patterns
+        const containsSpamPattern = spamPatterns.some(pattern => pattern.test(message));
+        
+        // Check for spam keywords
+        const containsSpamKeyword = spamWords.some(keyword => {
+            // Check all keywords regardless of length
+            const regex = new RegExp(`\\b${keyword}\\b`, 'i');
+            return regex.test(message) || regex.test(username);
+        });
+        
+        if (containsSpamPattern || containsSpamKeyword) {
+            return {
+                status: 400,
+                body: {
+                    error: 'Your message contains prohibited content. Please revise and try again.'
+                },
+                success: false
             }
         }
 
