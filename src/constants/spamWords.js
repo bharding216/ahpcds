@@ -28,6 +28,7 @@ export const spamWords = [
     'multi level marketing',
     
     // Questionable products/services
+    'franchise',
     'viagra',
     'cialis',
     'pharmacy',
