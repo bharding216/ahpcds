@@ -95,7 +95,9 @@
 				<h2 class="mb-0 text-white">What Parents Are Saying</h2>
 			</div>
 			<div class="col-12 col-lg-4 text-lg-end mt-3 mt-lg-0">
-				<a href="/schedule-tour" class="btn btn-light btn-sm px-3">See if we’re the right fit</a>
+				<a href={SCHEDULE_TOUR_URL} target="_blank" rel="noopener noreferrer" class="btn btn-light btn-sm px-3">
+					See if we’re the right fit
+				</a>
 			</div>
 		</div>
 
