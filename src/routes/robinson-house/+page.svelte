@@ -10,7 +10,7 @@
     import child8 from '$lib/images/child8.jpg';
     import infantPhoto from '$lib/images/infant.jpg';
 	import { page } from '$app/stores';
-
+	import { SCHEDULE_TOUR_URL } from '$lib/links';
 </script>
 
 <svelte:head>
@@ -132,7 +132,14 @@
         <p><em>Inspired by the legacy of Iris and Robby Robinson, we continue their commitment to nurturing young lives.</em></p>
 
         <div class="text-center pt-3">
-            <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour</a>
+            <a
+				href={SCHEDULE_TOUR_URL}
+				target="_blank"
+				rel="noopener noreferrer"
+				class="btn btn-primary"
+			>
+				Schedule a tour
+			</a>
         </div>
     </div>
 </section>

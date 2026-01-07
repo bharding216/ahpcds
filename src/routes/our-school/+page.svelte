@@ -10,7 +10,7 @@
     import child8 from '$lib/images/child8.jpg';
     import infantPhoto from '$lib/images/infant.jpg';
 	import { page } from '$app/stores';
-
+	import { SCHEDULE_TOUR_URL } from '$lib/links';
 </script>
 
 <svelte:head>
@@ -121,7 +121,14 @@
                         <h1 class="pb-4 text-center">Step into a World of Wonder at AHPCDS</h1>
                     </div>
                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
-                        <a href="/schedule-tour" class="btn btn-primary" aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined}>Schedule a tour</a>
+                        <a
+							href={SCHEDULE_TOUR_URL}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary"
+						>
+							Schedule a tour
+						</a>
                     </div>
                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
                         <a href="https://www.toddly.app/school-profile/Alamo-Heights-Presbyterian-Church-Day-School-San-Antonio-TX-5299?open_enrollment_modal=true" 

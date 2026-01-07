@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import logo from '$lib/images/ahpcds-logo.png';
+	import { SCHEDULE_TOUR_URL } from '$lib/links';
 </script>
 
 <header class="my-3">
@@ -26,8 +27,10 @@
 						<a href="/our-school" class="nav-link">Our School</a>
 					</li>
 
-					<li aria-current={$page.url.pathname === '/schedule-tour' ? 'page' : undefined} class="nav-item">
-						<a href="/schedule-tour" class="nav-link">Schedule Tour</a>
+					<li class="nav-item">
+						<a href={SCHEDULE_TOUR_URL} class="nav-link" target="_blank" rel="noopener noreferrer">
+							Schedule Tour
+						</a>
 					</li>
 
 					<li aria-current={$page.url.pathname === '/forms' ? 'page' : undefined} class="nav-item">
