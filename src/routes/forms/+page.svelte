@@ -1,6 +1,6 @@
 <script>
     // Updated documents
-    const calendar25_26Link = 'https://ahpcds.s3.us-east-2.amazonaws.com/2025-2026+Calendar.pdf';
+    const calendar25_26Link = 'https://ahpcds.s3.us-east-2.amazonaws.com/2025-2026+School+Calendar.pdf';
     const enrollmentFormTxHhsLink = 'https://ahpcds.s3.us-east-2.amazonaws.com/Enrollment+Form+-+TX+Health+and+Human+Services.pdf';
 
     // Existing documents (left as-is)
