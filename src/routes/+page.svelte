@@ -51,7 +51,7 @@
 						academically, emotionally, and spiritually.
 					</p>
 					<p class="hero__lead mb-0">
-						Small class sizes, a low child-to-staff ratio, and experienced educators from <strong>six weeks to four years</strong>,
+						Small class sizes, a low child-to-staff ratio, and experienced educators from <strong>eight weeks to four years</strong>,
 						plus after-school care and summer camp.
 					</p>
 
@@ -155,7 +155,7 @@
                         <h4 class="mb-4 mt-3">Our Classes</h4>
                         <i class="fa-solid fa-children" style="color: black; font-size: 60px;"></i>
                         <p class="mt-4">
-                            We offer engaging, age-appropriate programs for children from six weeks to four years, plus after-school care and summer camp.
+                            We offer engaging, age-appropriate programs for children from eight weeks to four years, plus after-school care and summer camp.
                         </p>
                         <span class="btn btn-primary">View Classes</span>
                     </div>

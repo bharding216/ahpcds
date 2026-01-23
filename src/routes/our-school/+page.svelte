@@ -34,7 +34,7 @@
                     
                 <p>Our teachers regularly participate in educational seminars and always bring new ideas and input to their daily tasks.</p>
 
-                <p>AHPCDS serves children aged six weeks to five years old.
+                <p>AHPCDS serves children aged eight weeks to five years old.
                 We are open from 7:30 a.m. - 5:30 p.m. Monday through Friday, and we offer pick-up and an after-school program for children from Howard Early Childhood Center, Cambridge and Woodridge Elementary Schools.</p>
                 <p>We also offer a summer camp program for elementary school children.</p>
             </div>
