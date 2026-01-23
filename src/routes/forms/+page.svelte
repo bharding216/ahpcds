@@ -5,7 +5,7 @@
 
     // Existing documents (left as-is)
     const admissionForm = 'https://ahpcds.s3.amazonaws.com/Admission-Information-Form.pdf';
-    const handbook = 'https://ahpcds.s3.us-east-2.amazonaws.com/2026+Handbook+-+AHPCDS.docx';
+    const handbook = 'https://ahpcds.s3.us-east-2.amazonaws.com/2026+Handbook.pdf';
 </script>
 
 <svelte:head>
